@@ -1,0 +1,68 @@
+{
+  "documentation": {
+    "title": "Render Separator"
+  },
+  "render": [
+    {
+      "row": "+1",
+      "type": "renderText",
+      "properties": {
+        "title": "Example 1 - thin full width line"
+      },
+      "style": {
+        "marginTop": 5
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderSeparator",
+      "properties": {
+        "style": {
+          "backgroundColor": "blue"
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "properties": {
+        "title": "Example 2 - thicker full width line"
+      },
+      "style": {
+        "marginTop": 5
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderSeparator",
+      "properties": {
+        "style": {
+          "width": null,
+          "height": 10,
+          "backgroundColor": "red"
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "properties": {
+        "title": "Example 3 - fixed dimension"
+      },
+      "style": {
+        "marginTop": 5
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderSeparator",
+      "properties": {
+        "style": {
+          "width": 100,
+          "height": 46,
+          "backgroundColor": "green"
+        }
+      }
+    }
+  ]
+}

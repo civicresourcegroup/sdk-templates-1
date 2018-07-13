@@ -1,0 +1,83 @@
+{
+  "documentation": {
+    "title": "RenderMedia"
+  },
+  "render": [
+   {
+      "row": "+1",
+      "type": "renderText",
+      "properties": {
+        "title": "Swipe through images, video, pdf, youtube, web sites\nPress on content to large version"
+      },
+        "style": {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "marginBottom": 10
+        }
+    },
+    {
+      "row": "+1",
+      "type": "renderMedia",
+      "properties": {
+        "imageSliderHeight": 200,
+        "media": [
+          "https://pbs.twimg.com/media/C47zduiUEAAlvoG.jpg",
+          {
+            "source": {
+              "uri": "https://static.videezy.com/system/resources/previews/000/000/094/original/FroggerHighway.mp4"
+            },
+            "type": "video"
+          },
+          {
+            "source": {
+              "uri": "https://www.adobe.com/content/dam/acom/en/devnet/acrobat/pdfs/pdf_open_parameters.pdf"
+            },
+            "type": "pdf",
+            "header": {
+              "value": "PDF Header",
+              "textStyle": {
+                "color": "black"
+              }
+            },
+            "footer": {
+              "value": "PDF Footer",
+              "textStyle": {
+                "color": "black"
+              }
+            }
+          },
+          {
+            "source": {
+              "id": "C6icTzu4c7Y"
+            },
+            "type": "youtube",
+            "header": {
+              "value": "Youtube Header",
+              "textStyle": {
+                "color": "black"
+              }
+            },
+            "footer": {
+              "value": "Youtube Footer",
+              "textStyle": {
+                "color": "black"
+              }
+            }
+          },
+          {
+            "source": {
+              "uri": "https://www.yahoo.com/news/weather/japan/chiryu-shi/chiryu-shi-1107803"
+            },
+            "type": "web"
+          },
+          {
+            "source": {
+              "uri": "https://www.yahoo.com/news/weather/united-states/san-francisco/san-francisco-2487956"
+            },
+            "type": "web"
+          }
+        ]
+      }
+    }
+  ]
+}

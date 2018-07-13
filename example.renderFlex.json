@@ -1,0 +1,133 @@
+{
+  "documentation": {
+    "title": "Flex Layout"
+  },
+  "constants": {
+    "myBoxStyle": {
+      "width": null,
+      "height": 46
+    }
+  },
+  "render": [
+    {
+      "row": "+1",
+      "type": "renderText",
+      "properties": {
+        "title": "Example 1"
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderSeparator",
+      "properties": {
+        "style": [
+          ".constants.myBoxStyle",
+          {
+            "backgroundColor": "blue"
+          }
+        ]
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "properties": {
+        "title": "Example 2"
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderSeparator",
+      "properties": {
+        "style": [
+          ".constants.myBoxStyle",
+          {
+            "backgroundColor": "blue"
+          }
+        ]
+      }
+    },
+    {
+      "row": "+0",
+      "type": "renderSeparator",
+      "properties": {
+        "style": [
+          ".constants.myBoxStyle",
+          {
+            "backgroundColor": "red"
+          }
+        ]
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "properties": {
+        "title": "Example 3"
+      }
+    },
+    {
+      "row": "+1",
+      "colName": "column1",
+      "type": "renderSeparator",
+      "properties": {
+        "style": [
+          ".constants.myBoxStyle",
+          {
+            "backgroundColor": "blue"
+          }
+        ]
+      }
+    },
+    {
+      "row": "+0",
+      "colName": "column2",
+      "type": "renderSeparator",
+      "properties": {
+        "style": [
+          ".constants.myBoxStyle",
+          {
+            "backgroundColor": "red"
+          }
+        ]
+      }
+    },
+    {
+      "row": "+0",
+      "colName": "column3",
+      "type": "renderSeparator",
+      "properties": {
+        "style": [
+          ".constants.myBoxStyle",
+          {
+            "backgroundColor": "green"
+          }
+        ]
+      }
+    },
+    {
+      "row": "+0",
+      "type": "renderText",
+      "col": "column1",
+      "properties": {
+        "title": "Color 1"
+      }
+    },
+    {
+      "row": "+0",
+      "type": "renderText",
+      "col": "column2",
+      "properties": {
+        "title": "Color 2"
+      }
+    },
+    {
+      "row": "+0",
+      "type": "renderText",
+      "col": "column3",
+      "properties": {
+        "title": "Color 3"
+      }
+    }
+  ]
+}

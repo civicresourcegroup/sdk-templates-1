@@ -1,0 +1,36 @@
+{
+  "documentation": {
+    "title": "Hello World Example"
+  },
+  "constants": {
+    "textPosition": {
+      "justifyContent": "center",
+      "alignItems": "center",
+      "height": 60,
+      "backgroundColor": "brown",
+      "margin": 30,
+      "borderRadius": 15
+    },
+    "textStyle": {
+      "fontSize": 14,
+      "marginLeft": 10,
+      "color": "white"
+    }
+  },
+  "render": [
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": [
+        ".constants.textPosition",
+        {
+          "marginTop": 56
+        }
+      ],
+      "properties": {
+        "title": "Hello World",
+        "style": ".constants.textStyle"
+      }
+    }
+  ]
+}

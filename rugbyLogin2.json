@@ -1,0 +1,160 @@
+{
+  "documentation": {
+    "title": "Rugby Login Screen 2",
+    "header": false
+  },
+  "constants": {
+    "fieldPosition": {
+      "height": 30,
+      "backgroundColor": "transparent",
+      "justifyContent": "center",
+      "marginLeft": 20,
+      "marginRight": 20,
+      "marginBottom": 10,
+      "borderRadius": 5,
+      "borderWidth": 1,
+      "borderColor": "white",
+      "minWidth": 140
+    },
+    "forgotPasswordPosition": {
+      "height": 30,
+      "marginTop": 10,
+      "marginBottom": 10,
+      "alignItems": "center"
+    },
+    "contactPosition": {
+      "height": 30,
+      "backgroundColor": "#0096d0",
+      "justifyContent": "center",
+      "marginTop": 50,
+      "marginLeft": 130,
+      "marginRight": 130,
+      "marginBottom": 40,
+      "borderRadius": 10,
+      "alignItems": "center"
+    },
+    "textStyle": {
+      "fontSize": 14,
+      "textAlign": "left",
+      "marginLeft": 10,
+      "paddingLeft": 2,
+      "color": "white"
+    }
+  },
+  "render": [
+    {
+      "row": "+1",
+      "type": "renderImage",
+      "properties": {
+        "image": "@media{../resources/wearable/rugby/login_image_logo/login_rugby_bg@?x.png}",
+        "resizeMode": "cover",
+        "style": {
+          "position": "absolute",
+          "width": "@formula{screenWidth()}",
+          "height": "@formula{screenHeight()}"
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderImage",
+      "properties": {
+        "image": "@media{../resources/wearable/rugby/login_image_logo/blossoms_logo@?x.png}"
+      },
+      "style": {
+        "marginTop": 140,
+        "alignItems": "center"
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": {
+        "marginTop": 10,
+        "marginBottom": 150,
+        "alignItems": "center"
+      },
+      "properties": {
+        "title": "Brave Blossoms",
+        "style": {
+          "fontSize": 30,
+          "color": "white",
+          "backgroundColor": "transparent"
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.fieldPosition",
+      "properties": {
+        "title": "Email",
+        "style": ".constants.textStyle"
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.fieldPosition",
+      "properties": {
+        "title": "Password",
+        "style": ".constants.textStyle"
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.forgotPasswordPosition",
+      "properties": {
+        "title": "Forgot Password",
+        "style": [
+          ".constants.textStyle",
+          {
+            "backgroundColor": "transparent",
+            "color": "white"
+          }
+        ]
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": [
+        ".constants.contactPosition",
+        {
+          "justifyContent": "center"
+        }
+      ],
+      "properties": {
+        "title": "Connect",
+        "style": [
+          ".constants.textStyle",
+          {
+            "color": "white",
+            "marginLeft": 0
+          }
+        ],
+         "action": [
+          {
+            "action": "reload"
+          }
+        ]
+     }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "properties": {
+        "title": "By using the app, you agree to the\nTerms of Services and Privacy Policy",
+        "style": [
+          ".constants.textStyle",
+          {
+            "color": "white",
+            "backgroundColor": "transparent",
+            "textAlign": "center"
+          }
+        ]
+      }
+    }
+  ]
+}

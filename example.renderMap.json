@@ -1,0 +1,54 @@
+{
+  "documentation": {
+    "title": "RenderMap"
+  },
+  "render": [
+   {
+      "row": "+1",
+      "type": "renderText",
+      "properties": {
+        "title": "Example 1"
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderMap",
+      "properties": {
+        "latitude": 35.006355,
+        "longitude": 137.05429,
+        "latitudeDelta": 0.0222,
+        "longitudeDelta": 0.021,
+        "style": {
+          "width": null,
+          "height": 300
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "properties": {
+        "title": "Example 2"
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderMap",
+      "properties": {
+        "refresh": 15000,
+        "latitudeDelta": 0.00422,
+        "longitudeDelta": 0.0041,
+        "mapType": "standard",
+        "locator": true,
+         "fetcherRefresh": 13000,
+       "fetchers": [
+          "lyft"
+        ],
+        "style": {
+          "width": null,
+          "height": 100
+        }
+      }
+    }
+  ]
+}

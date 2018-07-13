@@ -1,0 +1,68 @@
+{
+  "documentation": {
+    "title": "Render Toolbar"
+  },
+  "render": [
+    {
+      "row": "+1",
+      "type": "renderToolbar",
+      "properties": {
+        "options": {
+          "initialSelectedTab": 0,
+          "tabs": [
+            {
+              "label": "Tab 1",
+              "name": 0,
+              "value": 0
+            },
+            {
+              "label": "Tab 2",
+              "name": 1,
+              "value": 1
+            },
+            {
+              "label": "Tab 3",
+              "name": 2,
+              "value": 2
+            },
+            {
+              "label": "Tab 4",
+              "name": 3,
+              "value": 3
+            },
+            {
+              "label": "Tab 5",
+              "name": 4,
+              "value": 4
+            },
+            {
+              "label": "Tab 6",
+              "name": 5,
+              "value": 5
+            },
+            {
+              "label": "Tab 7",
+              "name": 6,
+              "value": 6
+            },
+            {
+              "label": "Tab 8",
+              "name": 7,
+              "value": 7
+            },
+            {
+              "label": "Tab 9",
+              "name": 8,
+              "value": 8
+            },
+            {
+              "label": "Tab 10",
+              "name": 9,
+              "value": 9
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

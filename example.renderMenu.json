@@ -1,0 +1,41 @@
+{
+  "documentation": {
+    "title": "Render Menu"
+  },
+  "render": [
+    {
+      "row": "+1",
+      "type": "renderMenu",
+      "properties": {
+        "style": {
+          "color": "gold",
+          "backgroundColor": "transparent",
+          "width": 100
+        },
+        "type": "segment",
+        "options": [
+          {
+            "label": "°C",
+            "value": 1
+          },
+          {
+            "label": "°K",
+            "value": 2
+          },
+          {
+            "selected": true,
+            "label": "°F",
+            "value": 0
+          }
+        ]
+      },
+      "style": {
+        "marginBottom": 20,
+        "justifyContent": "center",
+        "alignItems": "center",
+        "backgroundColor": "gray",
+        "padding": 10
+      }
+    }
+  ]
+}

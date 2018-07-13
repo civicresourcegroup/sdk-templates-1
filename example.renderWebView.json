@@ -1,0 +1,18 @@
+{
+  "documentation": {
+    "title": "Render WebView"
+  },
+  "render": [
+    {
+      "row": "+1",
+      "type": "renderWebView",
+      "properties": {
+        "url": "https://www.youtube.com",
+        "style": {
+          "width": null,
+          "height": 300
+        }
+      }
+    }
+  ]
+}

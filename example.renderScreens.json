@@ -1,0 +1,189 @@
+{
+  "documentation": {
+    "title": "Selected Screens"
+  },
+  "constants": {
+    "streetview": "sf2",
+    "cityName": "San Francisco",
+    "textPosition": {
+      "justifyContent": "center",
+      "alignItems": "center",
+      "height": 40,
+      "backgroundColor": "brown",
+      "padding": 10,
+      "marginTop": 10,
+      "marginLeft": 25,
+      "marginRight": 25,
+      "borderRadius": 5
+    },
+    "textStyle": {
+      "fontSize": 14,
+      "textAlign": "center",
+      "marginLeft": 10,
+      "paddingLeft": 2,
+      "color": "white",
+      "width": 150
+    }
+  },
+  "render": [
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "title": "Map View",
+        "style": ".constants.textStyle",
+        "action": {
+          "action": "home.PoiView",
+          "navBarHidden": false,
+          "themeParams": {
+            "showBackButton": true
+          }
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "title": "Trip Planner",
+        "style": ".constants.textStyle",
+        "action": {
+          "action": "home.TripPlanner",
+          "navBarHidden": false,
+          "title": "Trip Planner"
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "title": "Transit",
+        "style": ".constants.textStyle",
+        "action": {
+          "action": "transit.AgencyContainer",
+          "navBarHidden": false,
+          "title": "Public Transit Agencies"
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "title": "List View",
+        "style": ".constants.textStyle",
+        "action": {
+          "action": "demo.TemplateList",
+          "navBarHidden": false,
+          "themeParams": {
+            "showBackButton": true
+          }
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "title": "Bookmarks",
+        "style": ".constants.textStyle",
+        "action": {
+          "action": "bookmarks.Bookmarks"
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "title": "Street View",
+        "style": ".constants.textStyle",
+        "action": [
+          {
+            "action": "selectLocation",
+            "actionCreator": {
+              "id": ".constants.streetview"
+            }
+          },
+          {
+            "action": "home.ShowStreetView",
+            "title": ".constants.cityName",
+            "templateLocation": ".constants.streetview",
+            "showLiveCamera": false,
+            "navBarHidden": false,
+            "hasNavBar": true,
+            "fetcherRefs": [
+              "wifi",
+              "congestion",
+              "twitter"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "title": "Camera View",
+        "style": ".constants.textStyle",
+        "action": [
+          {
+            "action": "selectLocation",
+            "actionCreator": {
+              "id": ".constants.streetview"
+            }
+          },
+          {
+            "action": "home.ShowStreetView",
+            "title": ".constants.cityName",
+            "templateLocation": ".constants.streetview",
+            "showLiveCamera": true,
+            "navBarHidden": false,
+            "hasNavBar": true,
+            "fetcherRefs": [
+              "wifi",
+              "congestion",
+              "twitter"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "title": "Search",
+        "style": ".constants.textStyle",
+        "action": {
+          "action": "home.Search"
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "title": "Uber",
+        "style": ".constants.textStyle",
+        "action": {
+          "action": "uberto",
+          "title": "1321 Orange Ave, Menlo Park",
+          "latitude": "37.429960",
+          "longitude": "-122.117284"
+        }
+      }
+    }
+  ]
+}
