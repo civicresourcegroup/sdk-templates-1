@@ -1,0 +1,92 @@
+#generated config
+# config.sdk.js     leave config.json in to be able to compare generation change while code evloves
+#certs
+*.mobileprovision
+*.cer
+*.certSigningRequest
+*.p12
+*.pem
+*.pkey
+*.app.dSYM.zip
+#vscode
+jsconfig.json
+.vscode
+# OSX
+#
+.DS_Store
+
+#jsBundle
+*.jsbundle*
+
+# Xcode
+#
+Frameworks/
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+Pods/
+project.xcworkspace
+
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
+
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# BUCK
+buck-out/
+\.buckd/
+*.keystore
+
+# React
+\._*.m
+\._*.h
+\._*.js
+\._*.json
+\._*
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/buildReports
+fastlane/config*.json
+
+#App Icon
+AppIcon.appiconset/
+#VS JS config
+jsconfig.json
+dependencies.json
+
+# Android HTML Assets
+android/app/src/main/assets/html
+# Android Streetview
+android/app/src/main/assets/photosphere/*.png
+!android/app/src/main/assets/photosphere/panorama.sdk.html
