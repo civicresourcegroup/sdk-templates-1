@@ -1,0 +1,140 @@
+{
+  "documentation": {
+    "title": "Rugby Login Screen 1",
+    "header": "actionbar",
+     "copyright": "Copyright© CivicConnect, 2018"
+  },
+  "constants": {
+    "fieldPosition": {
+      "height": 30,
+      "backgroundColor": "transparent",
+      "justifyContent": "center",
+      "marginLeft": 20,
+      "marginRight": 20,
+      "marginBottom": 10,
+      "borderRadius": 5,
+      "borderWidth": 1,
+      "borderColor": "gray",
+      "minWidth": 140
+    },
+    "forgotPasswordPosition": {
+      "height": 30,
+      "marginTop": 10,
+      "marginBottom": 10,
+      "alignItems": "center"
+    },
+    "contactPosition": {
+      "height": 30,
+      "backgroundColor": "#0096d0",
+      "justifyContent": "center",
+      "marginTop": 50,
+      "marginLeft": 130,
+      "marginRight": 130,
+      "marginBottom": 40,
+      "borderRadius": 10,
+      "alignItems": "center"
+    },
+    "textStyle": {
+      "fontSize": 14,
+      "textAlign": "left",
+      "marginLeft": 10,
+      "paddingLeft": 2,
+      "color": "gray"
+    }
+  },
+  "render": [
+    {
+      "row": "+1",
+      "type": "renderImage",
+      "properties": {
+        "image": "@media{../resources/wearable/rugby/login_image_logo/login_logo@?x.png}",
+        "style": {
+          "marginTop": 50,
+          "width": null
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderImage",
+      "properties": {
+        "image": "@media{../resources/wearable/rugby/login_image_logo/login_image@?x.png}",
+        "style": {
+          "width": null
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.fieldPosition",
+      "properties": {
+        "text": "Email",
+        "style": ".constants.textStyle"
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.fieldPosition",
+      "properties": {
+        "text": "Password",
+        "style": ".constants.textStyle"
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.forgotPasswordPosition",
+      "properties": {
+        "text": "Forgot Password",
+        "style": [
+          ".constants.textStyle",
+          {
+            "color": "blue"
+          }
+        ]
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": [
+        ".constants.contactPosition",
+        {
+          "justifyContent": "center"
+        }
+      ],
+      "properties": {
+        "text": "Connect",
+        "style": [
+          ".constants.textStyle",
+          {
+            "color": "white",
+            "marginLeft": 0
+          }
+        ],
+        "action": {
+          "action": "home.PoiView",
+          "navBarHidden": false,
+          "themeParams": {
+            "showBackButton": true
+          }
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "properties": {
+        "text": "By using the app, you agree to the\nTerms of Services and Privacy Policy",
+        "style": [
+          ".constants.textStyle",
+          {
+            "textAlign": "center"
+          }
+        ]
+      }
+    }
+  ]
+}
