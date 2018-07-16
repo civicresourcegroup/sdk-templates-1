@@ -1,0 +1,70 @@
+{
+  "documentation": {
+    "title": "Assorted Images",
+    "copyright": "Copyright© CivicConnect, 2018"
+  },
+  "constants": {
+    "textPosition": {
+      "justifyContent": "center",
+      "alignItems": "center",
+      "height": 40,
+      "backgroundColor": "brown",
+      "padding": 10,
+      "marginTop": 10,
+      "marginLeft": 25,
+      "marginRight": 25,
+      "borderRadius": 5
+    },
+    "textStyle": {
+      "fontSize": 14,
+      "textAlign": "center",
+      "marginLeft": 10,
+      "paddingLeft": 2,
+      "color": "white"
+    }
+  },
+  "render": [
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "text": "Weather",
+        "style": ".constants.textStyle",
+        "action": {
+          "action": "modalWebview",
+          "url": "@mediaPath{../documentation/content.Gallery.html}",
+          "title": "Weather Images",
+          "postMessage": {
+            "conventions": {
+              "fileName": [
+                [
+                  "^weather_",
+                  ""
+                ]
+              ]
+            },
+            "borderColor": ".color.mainBlue",
+            "images": [
+              "@mediaPath{../app/assets/weather/weather_chancerain@3x.png}",
+              "@mediaPath{../app/assets/weather/weather_cloud@3x.png}",
+              "@mediaPath{../app/assets/weather/weather_few_night@3x.png}",
+              "@mediaPath{../app/assets/weather/weather_fog@3x.png}",
+              "@mediaPath{../app/assets/weather/weather_moon@3x.png}",
+              "@mediaPath{../app/assets/weather/weather_partlycloudy@3x.png}",
+              "@mediaPath{../app/assets/weather/weather_rain@3x.png}",
+              "@mediaPath{../app/assets/weather/weather_rain_night@3x.png}",
+              "@mediaPath{../app/assets/weather/weather_scattered@3x.png}",
+              "@mediaPath{../app/assets/weather/weather_snow@3x.png}",
+              "@mediaPath{../app/assets/weather/weather_sun@3x.png}",
+              "@mediaPath{../app/assets/weather/weather_thunder@3x.png}"
+            ]
+          },
+          "containerStyle": {
+            "padding": 16
+          }
+        }
+      }
+    }
+  ]
+}

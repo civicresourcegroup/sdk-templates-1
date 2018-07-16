@@ -1,19 +1,17 @@
 {
   "documentation": {
-    "title": "RenderMedia"
+    "title": "RenderMedia",
+    "copyright": "Copyright© CivicConnect, 2018"
   },
   "render": [
-   {
+    {
       "row": "+1",
       "type": "renderText",
       "properties": {
-        "title": "Swipe through images, video, pdf, youtube, web sites\nPress on content to large version"
+        "text": "Swipe through images, video, pdf, youtube, web sites\nPress on content to large version",
+        "style": ".documentation.styles.headerText"
       },
-        "style": {
-          "alignItems": "center",
-          "justifyContent": "center",
-          "marginBottom": 10
-        }
+      "style": ".documentation.styles.header"
     },
     {
       "row": "+1",

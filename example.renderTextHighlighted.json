@@ -1,0 +1,87 @@
+{
+  "documentation": {
+    "title": "Render Text",
+    "copyright": "Copyright© CivicConnect, 2018"
+  },
+  "constants": {
+    "textPosition": {
+      "margin": 10
+    },
+    "textStyle": {
+      "fontSize": 14,
+      "color": "black"
+    },
+    "parsedTextPatterns": [
+      {
+        "pattern": "/<myKeyword>([^<]*)</myKeyword>/",
+        "style": {
+          "color": "green",
+          "fontWeight": "bold"
+        },
+        "renderText": 1
+      }
+    ]
+  },
+  "render": [
+    {
+      "row": "+1",
+      "type": "renderText",
+      "properties": {
+        "text": "Highlight predefined text deep links:\n      url, phone and email",
+        "style": ".documentation.styles.headerText"
+      },
+      "style": ".documentation.styles.header"
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "text": "Press on the deep link contact info\n   url: http://www.CivicConnect.com\n   phone number: 888-333-1212\n   email: mail@civicconnect.com",
+        "style": ".constants.textStyle",
+        "parsedText": true,
+        "parsedTextPatterns": ".constants.parsedTextPatterns[]"
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "properties": {
+        "text": "Style and colorize text with predefined tags:\n      <bold>, <colorize>",
+        "style": ".documentation.styles.headerText"
+      },
+      "style": ".documentation.styles.header"
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "text": "This is <bold>bolded text</bold> in this sentence\nThis is <colorize>colored text</colorize> in this sentence",
+        "style": ".constants.textStyle",
+        "parsedText": true,
+        "parsedTextPatterns": ".constants.parsedTextPatterns[]"
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "properties": {
+        "text": "Highlight text using custom regex template tags",
+        "style": ".documentation.styles.headerText"
+      },
+      "style": ".documentation.styles.header"
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "text": "This is custom <myKeyword>highlighted text</myKeyword> in this sentence",
+        "style": ".constants.textStyle",
+        "parsedText": true,
+        "parsedTextPatterns": ".constants.parsedTextPatterns[]"
+      }
+    }
+  ]
+}

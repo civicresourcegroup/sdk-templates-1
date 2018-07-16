@@ -1,6 +1,7 @@
 {
   "documentation": {
-    "title": "Render Toolbar"
+    "title": "Render Toolbar",
+    "copyright": "Copyright© CivicConnect, 2018"
   },
   "render": [
     {

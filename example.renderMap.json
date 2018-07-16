@@ -1,14 +1,17 @@
 {
   "documentation": {
-    "title": "RenderMap"
+    "title": "RenderMap",
+    "copyright": "Copyright© CivicConnect, 2018"
   },
   "render": [
-   {
+    {
       "row": "+1",
       "type": "renderText",
       "properties": {
-        "title": "Example 1"
-      }
+        "text": "Example 1",
+        "style": ".documentation.styles.headerText"
+      },
+      "style": ".documentation.styles.header"
     },
     {
       "row": "+1",
@@ -28,8 +31,10 @@
       "row": "+1",
       "type": "renderText",
       "properties": {
-        "title": "Example 2"
-      }
+        "text": "Example 2 - Include Lyft data fetcher",
+        "style": ".documentation.styles.headerText"
+      },
+      "style": ".documentation.styles.header"
     },
     {
       "row": "+1",
@@ -40,8 +45,8 @@
         "longitudeDelta": 0.0041,
         "mapType": "standard",
         "locator": true,
-         "fetcherRefresh": 13000,
-       "fetchers": [
+        "fetcherRefresh": 13000,
+        "fetchers": [
           "lyft"
         ],
         "style": {

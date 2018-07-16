@@ -1,0 +1,164 @@
+{
+  "documentation": {
+    "title": "Render Web Screen",
+    "copyright": "Copyright© CivicConnect, 2018"
+  },
+  "constants": {
+    "textPosition": {
+      "justifyContent": "center",
+      "alignItems": "center",
+      "height": 40,
+      "backgroundColor": "brown",
+      "padding": 10,
+      "marginTop": 10,
+      "marginLeft": 25,
+      "marginRight": 25,
+      "borderRadius": 5
+    },
+    "textStyle": {
+      "fontSize": 14,
+      "textAlign": "center",
+      "marginLeft": 10,
+      "paddingLeft": 2,
+      "color": "white"
+    }
+  },
+  "render": [
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "text": "List View",
+        "style": ".constants.textStyle",
+        "action": {
+          "action": "demo.TemplateList",
+          "navBarHidden": false,
+          "themeParams": {
+            "showBackButton": true
+          }
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "text": "List View and Detail View\nwith Sorting",
+        "style": ".constants.textStyle",
+        "action": {
+          "action": "demo.TemplateList",
+          "navBarHidden": false,
+          "themeParams": {
+            "showBackButton": true
+          },
+          "title": "People",
+          "sort": {
+            "descending": false,
+            "options": [
+              {
+                "name": "A-Z",
+                "path": ".title"
+              },
+              {
+                "name": "Distance",
+                "path": ".haversineDistanceKM"
+              },
+              {
+                "name": "Custom",
+                "path": ".haversineDistanceKM"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "text": "List View and Detail View\nwith Filtering and Sorting",
+        "style": ".constants.textStyle",
+        "action": {
+          "action": "demo.TemplateList",
+          "navBarHidden": false,
+          "themeParams": {
+            "showBackButton": true
+          },
+          "title": "People",
+          "sort": {
+            "descending": false,
+            "options": [
+              {
+                "name": "A-Z",
+                "path": ".title"
+              },
+              {
+                "name": "Distance",
+                "path": ".haversineDistanceKM"
+              },
+              {
+                "name": "Custom",
+                "path": ".haversineDistanceKM"
+              }
+            ]
+          },
+          "filters": [
+            {
+              "name": "All",
+              "path": ".{.position}"
+            },
+            {
+              "name": "Coach",
+              "path": ".{.position *= 'Coach'}"
+            },
+            {
+              "name": "Player",
+              "path": ".{!(.position *= 'Coach')}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "text": "List View and Detail View\nwith Date Filter and Sorting",
+        "style": ".constants.textStyle",
+        "action": {
+          "action": "demo.TemplateList",
+          "navBarHidden": false,
+          "themeParams": {
+            "showBackButton": true
+          },
+          "title": "People",
+          "sort": {
+            "descending": false,
+            "options": [
+              {
+                "name": "A-Z",
+                "path": ".title"
+              },
+              {
+                "name": "Distance",
+                "path": ".haversineDistanceKM"
+              },
+              {
+                "name": "Custom",
+                "path": ".haversineDistanceKM"
+              }
+            ]
+          },
+          "dateFilter": {
+            "startDate": ".startTimestamp",
+            "endDate": ".endTimestamp"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "documentation": {
+    "title": "Flex Layout",
+    "copyright": "Copyright© CivicConnect, 2018"
+  },
+  "constants": {
+    "myBoxStyle": {
+      "width": null,
+      "height": 46
+    }
+  },
+  "render": [
+    {
+      "row": "+1",
+      "type": "renderText",
+      "properties": {
+        "text": "Example Full width row",
+        "style": ".documentation.styles.headerText"
+      },
+      "style": ".documentation.styles.header"
+    },
+    {
+      "row": "+1",
+      "type": "renderRect",
+      "properties": {
+        "style": [
+          ".constants.myBoxStyle",
+          {
+            "backgroundColor": "blue"
+          }
+        ]
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "properties": {
+        "text": "Example Two column row",
+        "style": ".documentation.styles.headerText"
+      },
+      "style": ".documentation.styles.header"
+    },
+    {
+      "row": "+1",
+      "type": "renderRect",
+      "properties": {
+        "style": [
+          ".constants.myBoxStyle",
+          {
+            "backgroundColor": "blue"
+          }
+        ]
+      }
+    },
+    {
+      "row": "+0",
+      "type": "renderRect",
+      "properties": {
+        "style": [
+          ".constants.myBoxStyle",
+          {
+            "backgroundColor": "red"
+          }
+        ]
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "properties": {
+        "text": "Example - Three column row with aligned labels",
+        "style": ".documentation.styles.headerText"
+      },
+      "style": ".documentation.styles.header"
+    },
+    {
+      "row": "+1",
+      "colName": "column1",
+      "type": "renderRect",
+      "properties": {
+        "style": [
+          ".constants.myBoxStyle",
+          {
+            "backgroundColor": "blue"
+          }
+        ]
+      }
+    },
+    {
+      "row": "+0",
+      "colName": "column2",
+      "type": "renderRect",
+      "properties": {
+        "style": [
+          ".constants.myBoxStyle",
+          {
+            "backgroundColor": "red"
+          }
+        ]
+      }
+    },
+    {
+      "row": "+0",
+      "colName": "column3",
+      "type": "renderRect",
+      "properties": {
+        "style": [
+          ".constants.myBoxStyle",
+          {
+            "backgroundColor": "green"
+          }
+        ]
+      }
+    },
+    {
+      "row": "+0",
+      "type": "renderText",
+      "col": "column1",
+      "properties": {
+        "text": "Color 1"
+      }
+    },
+    {
+      "row": "+0",
+      "type": "renderText",
+      "col": "column2",
+      "properties": {
+        "text": "Color 2"
+      }
+    },
+    {
+      "row": "+0",
+      "type": "renderText",
+      "col": "column3",
+      "properties": {
+        "text": "Color 3"
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "properties": {
+        "text": "Components are automatically arranged into rows based on a specific row number, or '+/-' relative to the current row.  Using '+0' places the component in the same row as the previous component.  Column names can set for any component to overlap components on top of each other.",
+        "style": ".documentation.styles.description"
+      }
+    }
+  ]
+}

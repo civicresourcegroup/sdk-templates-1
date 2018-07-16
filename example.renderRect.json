@@ -1,0 +1,66 @@
+{
+  "documentation": {
+    "title": "Render Rect",
+    "copyright": "Copyright© CivicConnect, 2018"
+  },
+  "render": [
+    {
+      "row": "+1",
+      "type": "renderText",
+      "properties": {
+        "text": "Example 1 - thin full width line",
+        "style": ".documentation.styles.headerText"
+      },
+      "style": ".documentation.styles.header"
+    },
+    {
+      "row": "+1",
+      "type": "renderRect",
+      "properties": {
+        "style": {
+          "backgroundColor": "blue"
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "properties": {
+        "text": "Example 2 - thicker full width line",
+        "style": ".documentation.styles.headerText"
+      },
+      "style": ".documentation.styles.header"
+    },
+    {
+      "row": "+1",
+      "type": "renderRect",
+      "properties": {
+        "style": {
+          "width": null,
+          "height": 10,
+          "backgroundColor": "red"
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "properties": {
+        "text": "Example 3 - fixed dimension",
+        "style": ".documentation.styles.headerText"
+      },
+      "style": ".documentation.styles.header"
+    },
+    {
+      "row": "+1",
+      "type": "renderRect",
+      "properties": {
+        "style": {
+          "width": 100,
+          "height": 46,
+          "backgroundColor": "green"
+        }
+      }
+    }
+  ]
+}

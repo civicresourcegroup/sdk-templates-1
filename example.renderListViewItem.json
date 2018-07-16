@@ -1,6 +1,7 @@
 {
   "documentation": {
-    "title": "Render ListViewItem"
+    "title": "Render ListViewItem",
+    "copyright": "Copyright© CivicConnect, 2018"
   },
   "place": "rugby",
   "constants": {
@@ -9,17 +10,27 @@
   "render": [
     {
       "row": "+1",
+      "type": "renderText",
+      "properties": {
+        "text": {
+          "template": "List Item using a search for the word '@{searchTerm}'",
+          "variables": {
+            "searchTerm": ".constants.searchTerm"
+          }
+        },
+        "style": ".documentation.styles.headerText"
+      },
+      "style": ".documentation.styles.header"
+    },
+    {
+      "row": "+1",
       "type": "renderListViewItem",
       "style": {
         "marginBottom": 20
       },
       "properties": {
-        "header": {
-          "template": "Search for a @{searchTerm}",
-          "variables": {
-            "searchTerm": ".constants.searchTerm"
-          }
-        },
+        "header": "Header",
+        "footer": "Footer",
         "placeHolderData": {
           "loadingText": "Loading Data..."
         },

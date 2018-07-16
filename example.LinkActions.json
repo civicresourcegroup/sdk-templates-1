@@ -1,0 +1,73 @@
+{
+  "documentation": {
+    "title": "Linking Actions",
+    "copyright": "Copyright© CivicConnect, 2018"
+  },
+  "constants": {
+    "streetview": "sf2",
+    "cityName": "San Francisco",
+    "textPosition": {
+      "justifyContent": "center",
+      "alignItems": "center",
+      "height": 40,
+      "backgroundColor": "brown",
+      "padding": 10,
+      "marginTop": 10,
+      "marginLeft": 25,
+      "marginRight": 25,
+      "borderRadius": 5
+    },
+    "textStyle": {
+      "fontSize": 14,
+      "textAlign": "center",
+      "marginLeft": 10,
+      "paddingLeft": 2,
+      "color": "white"
+    }
+  },
+  "render": [
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "text": "Phone",
+        "style": ".constants.textStyle",
+        "action": {
+          "action": "tel",
+          "tel": "804-325-3535"
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "text": "Email",
+        "style": ".constants.textStyle",
+        "action": {
+          "action": "mailto",
+          "url": "user@civcconnect.com",
+          "subject": "My Test Email",
+          "body": "This is my email body",
+          "cc": "acct@civcconnect.com",
+          "bcc": "info@civcconnect.com"
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "text": "Link",
+        "style": ".constants.textStyle",
+        "action": {
+          "action": "linkto",
+          "url": "http://www.apple.com"
+        }
+      }
+    }
+  ]
+}

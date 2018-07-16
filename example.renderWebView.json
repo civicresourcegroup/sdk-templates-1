@@ -1,16 +1,29 @@
 {
   "documentation": {
-    "title": "Render WebView"
+    "title": "Render WebView",
+    "copyright": "Copyright© CivicConnect, 2018"
+  },
+  "constants": {
+    "url": "https://www.youtube.com"
   },
   "render": [
     {
       "row": "+1",
+      "type": "renderText",
+      "properties": {
+        "text": ".constants.url",
+        "style": ".documentation.styles.headerText"
+      },
+      "style": ".documentation.styles.header"
+    },
+    {
+      "row": "+1",
       "type": "renderWebView",
       "properties": {
-        "url": "https://www.youtube.com",
+        "url": ".constants.url",
         "style": {
           "width": null,
-          "height": 300
+          "height": 400
         }
       }
     }

@@ -1,19 +1,20 @@
 {
   "documentation": {
-    "title": "Hello World Example"
+    "title": "Hello World Example",
+    "copyright": "Copyright© CivicConnect, 2018"
   },
   "constants": {
     "textPosition": {
       "justifyContent": "center",
       "alignItems": "center",
-      "height": 60,
       "backgroundColor": "brown",
+      "height": 60,
       "margin": 30,
+      "marginTop": 56,
       "borderRadius": 15
     },
     "textStyle": {
       "fontSize": 14,
-      "marginLeft": 10,
       "color": "white"
     }
   },
@@ -21,14 +22,9 @@
     {
       "row": "+1",
       "type": "renderText",
-      "style": [
-        ".constants.textPosition",
-        {
-          "marginTop": 56
-        }
-      ],
+      "style": ".constants.textPosition",
       "properties": {
-        "title": "Hello World",
+        "text": "Hello World",
         "style": ".constants.textStyle"
       }
     }

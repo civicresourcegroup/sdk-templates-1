@@ -1,0 +1,104 @@
+{
+  "documentation": {
+    "title": "Transit",
+    "copyright": "Copyright© CivicConnect, 2018"
+  },
+  "constants": {
+    "streetview": "sf2",
+    "cityName": "San Francisco",
+    "textPosition": {
+      "justifyContent": "center",
+      "alignItems": "center",
+      "height": 40,
+      "backgroundColor": "brown",
+      "padding": 10,
+      "marginTop": 10,
+      "marginLeft": 25,
+      "marginRight": 25,
+      "borderRadius": 5
+    },
+    "textStyle": {
+      "fontSize": 14,
+      "textAlign": "center",
+      "marginLeft": 10,
+      "paddingLeft": 2,
+      "color": "white"
+    }
+  },
+  "render": [
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "text": "Map View",
+        "style": ".constants.textStyle",
+        "action": {
+          "action": "home.PoiView",
+          "navBarHidden": false,
+          "themeParams": {
+            "showBackButton": true
+          }
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "text": "Trip Planner",
+        "style": ".constants.textStyle",
+        "action": {
+          "action": "home.TripPlanner",
+          "navBarHidden": false,
+          "title": "Trip Planner"
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "text": "Transit Schedules",
+        "style": ".constants.textStyle",
+        "action": {
+          "action": "transit.AgencyContainer",
+          "navBarHidden": false,
+          "title": "Public Transit Agencies"
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "text": "Uber",
+        "style": ".constants.textStyle",
+        "action": {
+          "action": "uberto",
+          "title": "1321 Orange Ave, Menlo Park",
+          "latitude": "37.429960",
+          "longitude": "-122.117284"
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "text": "Lyft",
+        "style": ".constants.textStyle",
+        "action": {
+          "action": "lyftto",
+          "title": "1321 Orange Ave, Menlo Park",
+          "latitude": "37.429960",
+          "longitude": "-122.117284"
+        }
+      }
+    }
+  ]
+}

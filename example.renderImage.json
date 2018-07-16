@@ -1,6 +1,7 @@
 {
   "documentation": {
-    "title": "Render Image"
+    "title": "Render Image",
+    "copyright": "Copyright© CivicConnect, 2018"
   },
   "render": [
     {

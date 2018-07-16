@@ -1,0 +1,33 @@
+{
+  "documentation": {
+    "title": "FAQ",
+    "copyright": "Copyright© CivicConnect, 2018"
+  },
+  "render": [
+    {
+      "row": "+1",
+      "type": "renderImage",
+      "properties": {
+        "image": "@media{../app/assets/90x60_list_placeholder.png}",
+        "style": {
+          "width": null,
+          "height": 100
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "properties": {
+        "text": "Example coming soon...",
+        "style": [
+          {
+            "width": null,
+            "textAlign": "center"
+          },
+          ".documentation.styles.headerText"
+        ]
+      }
+    }
+  ]
+}

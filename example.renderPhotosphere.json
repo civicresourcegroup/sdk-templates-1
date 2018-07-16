@@ -1,0 +1,143 @@
+{
+  "documentation": {
+    "title": "Photosphere 360° Images",
+    "copyright": "Copyright© CivicConnect, 2018"
+  },
+  "constants": {
+    "textPosition": {
+      "justifyContent": "center",
+      "alignItems": "center",
+      "height": 40,
+      "backgroundColor": "brown",
+      "padding": 10,
+      "marginTop": 10,
+      "marginLeft": 25,
+      "marginRight": 25,
+      "borderRadius": 5
+    },
+    "textStyle": {
+      "fontSize": 14,
+      "textAlign": "center",
+      "marginLeft": 10,
+      "paddingLeft": 2,
+      "color": "white"
+    },
+    "locations": [
+      {
+        "name": "The Tropicale",
+        "type": "restaurant",
+        "url": "https://2.bp.blogspot.com/-YtBYIKvKiG8/WZsYHi4v2NI/AAAAAAAANZs/ztDoT4kyHlQ7GwdFOe-Nuedsen1gi-VYQCLcBGAs/s640/An%2BOpened%2BArm%2BApproach%2Bto%2BFlavors%2BThe%2BTropicale%2BRestaurant%2BReview%2Bby%2BJesse%2BBluma%2Bat%2BPointe%2BViven%2BZomato%2BNumber%2B1%2BOne%2BBlogger%2BTony%2BDi%2BLembo%2BIndigo%2BTahiti%2BRob%2BKuenziand%2BRanz%2BWienert%2B9_n.jpg",
+        "panoId": "AF1QipNVBDZbcmZtXGHEsmgoTt-7L9Rz2V1XEVJtd2JX",
+        "opentable": {
+          "title": "The Tropicale",
+          "coords": [
+            33.82695882976929,
+            -116.54402346461119
+          ],
+          "meta": {
+            "Address": "330 E Amado Rd, Palm Springs, CA"
+          }
+        }
+      },
+      {
+        "name": "Kaiser Grille",
+        "type": "restaurant",
+        "url": "https://s3-us-west-1.amazonaws.com/psl-images/wp-content/uploads/2016/11/15151506/kaiser-grille-palm-springs.jpg",
+        "panoId": "AF1QipMzyrhgSY47CZPjI3NXCRJzhFKAqDslgPgZ71m3",
+        "opentable": {
+          "title": "Kaiser Grille",
+          "coords": [
+            33.821052,
+            -116.547276
+          ],
+          "meta": {
+            "Address": "205 South Palm Canyon Drive, Palm Springs, CA"
+          }
+        }
+      },
+      {
+        "name": "Mr. Parkers",
+        "type": "restaurant",
+        "url": "https://d33wubrfki0l68.cloudfront.net/657dbda4a92b4d15826f8557e8cc0ab46619fabc/230ce/images/food--mister-parkers-1600-657dbda4.jpg",
+        "panoId": "AF1QipP4bZSL2fVEnDCIaRPskD4Pt_uBV8sq3vj_8nvR"
+      }
+    ]
+  },
+  "render": [
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "text": {
+          "template": "360° Image for @{location} + Opentable",
+          "variables": {
+            "location": ".constants.locations.[0].name"
+          }
+        },
+        "style": ".constants.textStyle",
+        "action": {
+          "action": "home.ShowStreetView",
+          "title": ".constants.locations.[0].name",
+          "photosphereParams": {
+            "panoId": {
+              "address": ".constants.locations.[0].name",
+              "panoId": ".constants.locations.[0].panoId",
+              "item": ".constants.locations.[0][]"
+            }
+          }
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "text": {
+          "template": "360° Image for @{location} + Opentable",
+          "variables": {
+            "location": ".constants.locations.[1].name"
+          }
+        },
+        "style": ".constants.textStyle",
+        "action": {
+          "action": "home.ShowStreetView",
+          "title": ".constants.locations.[1].name",
+          "photosphereParams": {
+            "panoId": {
+              "address": ".constants.locations.[1].name",
+              "panoId": ".constants.locations.[1].panoId",
+              "item": ".constants.locations.[1][]"
+            }
+          }
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "text": {
+          "template": "360° Image for @{location}",
+          "variables": {
+            "location": ".constants.locations.[2].name"
+          }
+        },
+        "style": ".constants.textStyle",
+        "action": {
+          "action": "home.ShowStreetView",
+          "title": ".constants.locations.[2].name",
+          "photosphereParams": {
+            "panoId": {
+              "address": ".constants.locations.[2].name",
+              "panoId": ".constants.locations.[2].panoId",
+              "item": ".constants.locations.[2][]"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "documentation": {
+    "title": "Transit Images",
+    "copyright": "Copyright© CivicConnect, 2018"
+  },
+  "constants": {
+    "textPosition": {
+      "justifyContent": "center",
+      "alignItems": "center",
+      "height": 40,
+      "backgroundColor": "brown",
+      "padding": 10,
+      "marginTop": 10,
+      "marginLeft": 25,
+      "marginRight": 25,
+      "borderRadius": 5
+    },
+    "textStyle": {
+      "fontSize": 14,
+      "textAlign": "center",
+      "marginLeft": 10,
+      "paddingLeft": 2,
+      "color": "white"
+    }
+  },
+  "render": [
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "text": "Points of Interest Images",
+        "style": ".constants.textStyle",
+        "action": {
+          "action": "modalWebview",
+          "url": "@mediaPath{../documentation/content.Gallery.html}",
+          "title": "Points of Interest",
+          "postMessage": {
+            "borderColor": ".color.mainBlue",
+            "images": [
+              "@mediaPath{../app/assets/categories/default_poi@3x.png}",
+              "@mediaPath{../app/assets/categories/event@3x.png}",
+              "@mediaPath{../app/assets/categories/hotel@3x.png}",
+              "@mediaPath{../app/assets/categories/play@3x.png}",
+              "@mediaPath{../app/assets/categories/restaurant@3x.png}",
+              "@mediaPath{../app/assets/categories/shopping@3x.png}",
+              "@mediaPath{../app/assets/categories/visitor_services@3x.png}",
+              "@mediaPath{../app/assets/categories/wedding_venue@3x.png}"
+            ]
+          },
+          "containerStyle": {
+            "padding": 16
+          }
+        }
+      }
+    }
+  ]
+}

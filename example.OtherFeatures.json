@@ -1,0 +1,136 @@
+{
+  "documentation": {
+    "title": "Selected Screens",
+    "copyright": "Copyright© CivicConnect, 2018"
+  },
+  "constants": {
+    "streetview": "sf2",
+    "cityName": "San Francisco",
+    "textPosition": {
+      "justifyContent": "center",
+      "alignItems": "center",
+      "height": 40,
+      "backgroundColor": "brown",
+      "padding": 10,
+      "marginTop": 10,
+      "marginLeft": 25,
+      "marginRight": 25,
+      "borderRadius": 5
+    },
+    "textStyle": {
+      "fontSize": 14,
+      "textAlign": "center",
+      "marginLeft": 10,
+      "paddingLeft": 2,
+      "color": "white"
+    }
+  },
+  "render": [
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "text": "Bookmarks",
+        "style": ".constants.textStyle",
+        "action": {
+          "action": "bookmarks.Bookmarks"
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "text": "Search",
+        "style": ".constants.textStyle",
+        "action": {
+          "action": "home.Search",
+          "placeHolder": "Search"
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "text": "Chooser",
+        "style": ".constants.textStyle",
+        "action": {
+          "action": "media.modal",
+          "title": "Roster",
+          "type": "chooser",
+          "source": [
+            {
+              "name": "Player 1",
+              "id": "attr_1"
+            },
+            {
+              "name": "Player 2",
+              "id": "attr_2"
+            },
+            {
+              "name": "Player 3",
+              "id": "attr_3"
+            },
+            {
+              "name": "Coach 1",
+              "id": "attr_4"
+            },
+            {
+              "name": "Coach 2",
+              "id": "attr_5"
+            }
+          ],
+          "placeHolderText": "Choose a Person",
+          "submitButtonText": "Show @{prediction} Results"
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "text": "Weather",
+        "style": ".constants.textStyle",
+        "action": {
+          "action": "media.index",
+          "title": "Weather",
+          "showPagination": true,
+          "isModal": true,
+          "pageIndicatorProps": {
+            "containerStyle": {
+              "paddingBottom": 44
+            }
+          },
+          "containerStyle": {
+            "backgroundColor": ".color.black"
+          },
+          "data": [
+            {
+              "source": {
+                "uri": "https://www.yahoo.com/news/weather/japan/aichi-prefecture/chiryu-shi-1107803"
+              },
+              "type": "web"
+            },
+            {
+              "source": {
+                "uri": "https://www.yahoo.com/news/weather/united-states/san-francisco/san-francisco-2487956"
+              },
+              "type": "web"
+            },
+            {
+              "source": {
+                "uri": "https://www.yahoo.com/news/weather/united-states/san-diego/san-diego-12796270"
+              },
+              "type": "web"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,7 +1,8 @@
 {
   "documentation": {
     "title": "Rugby Login Screen 2",
-    "header": false
+    "header": false,
+     "copyright": "Copyright© CivicConnect, 2018"
   },
   "constants": {
     "fieldPosition": {
@@ -75,7 +76,7 @@
         "alignItems": "center"
       },
       "properties": {
-        "title": "Brave Blossoms",
+        "text": "Brave Blossoms",
         "style": {
           "fontSize": 30,
           "color": "white",
@@ -88,7 +89,7 @@
       "type": "renderText",
       "style": ".constants.fieldPosition",
       "properties": {
-        "title": "Email",
+        "text": "Email",
         "style": ".constants.textStyle"
       }
     },
@@ -97,7 +98,7 @@
       "type": "renderText",
       "style": ".constants.fieldPosition",
       "properties": {
-        "title": "Password",
+        "text": "Password",
         "style": ".constants.textStyle"
       }
     },
@@ -106,7 +107,7 @@
       "type": "renderText",
       "style": ".constants.forgotPasswordPosition",
       "properties": {
-        "title": "Forgot Password",
+        "text": "Forgot Password",
         "style": [
           ".constants.textStyle",
           {
@@ -126,7 +127,7 @@
         }
       ],
       "properties": {
-        "title": "Connect",
+        "text": "Connect",
         "style": [
           ".constants.textStyle",
           {
@@ -145,7 +146,7 @@
       "row": "+1",
       "type": "renderText",
       "properties": {
-        "title": "By using the app, you agree to the\nTerms of Services and Privacy Policy",
+        "text": "By using the app, you agree to the\nTerms of Services and Privacy Policy",
         "style": [
           ".constants.textStyle",
           {

@@ -1,0 +1,123 @@
+{
+  "documentation": {
+    "title": "Render Text",
+    "copyright": "Copyright© CivicConnect, 2018"
+  },
+  "constants": {
+    "textPosition": {
+      "margin": 10,
+      "backgroundColor": "#e7e7e7"
+    },
+    "verticalPosition": {
+      "alignItems": "center",
+      "backgroundColor": "#e7e7e7",
+      "height": 50
+    },
+    "textStyle": {
+      "fontSize": 14,
+      "color": "black"
+    }
+  },
+  "render": [
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": [
+        ".constants.textPosition",
+        {
+          "alignItems": "flex-start"
+        }
+      ],
+      "properties": {
+        "text": "Left",
+        "style": ".constants.textStyle"
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": [
+        ".constants.textPosition",
+        {
+          "alignItems": "center"
+        }
+      ],
+      "properties": {
+        "text": "Center",
+        "style": ".constants.textStyle"
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": [
+        ".constants.textPosition",
+        {
+          "alignItems": "flex-end"
+        }
+      ],
+      "properties": {
+        "text": "Right",
+        "style": ".constants.textStyle"
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": [
+        ".constants.textPosition",
+        ".constants.verticalPosition",
+        {
+          "justifyContent": "flex-start"
+        }
+      ],
+      "properties": {
+        "text": "Top",
+        "style": ".constants.textStyle"
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": [
+        ".constants.textPosition",
+        ".constants.verticalPosition",
+        {
+          "justifyContent": "center"
+        }
+      ],
+      "properties": {
+        "text": "Middle",
+        "style": ".constants.textStyle"
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "style": [
+        ".constants.textPosition",
+        ".constants.verticalPosition",
+        {
+          "justifyContent": "flex-end"
+        }
+      ],
+      "properties": {
+        "text": "Bottom",
+        "style": ".constants.textStyle"
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderText",
+      "properties": {
+        "text":  {
+          "template": "Text Template BPM @{bpm}, ECG @{ecg}",
+          "variables": {
+            "bpm": 86,
+            "ecg": 160
+          }
+        }
+      }
+    }
+  ]
+}
