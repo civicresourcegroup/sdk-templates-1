@@ -43,7 +43,18 @@
     }
   },
   "render": [
-    {
+     {
+      "row": "+1",
+      "type": "renderImage",
+      "properties": {
+        "image": "@media{../resources/components/house.png}",
+        "style": {
+          "width": null,
+          "height": 100
+        }
+      }
+    },
+   {
       "row": "+1",
       "type": "renderImage",
       "properties": {
