@@ -47,6 +47,17 @@
       "row": "+1",
       "type": "renderImage",
       "properties": {
+        "image": "@media{../resources/components/house.png}",
+        "style": {
+          "width": null,
+          "height": 100
+        }
+      }
+    },
+    {
+      "row": "+1",
+      "type": "renderImage",
+      "properties": {
         "image": "@media{../resources/wearable/rugby/login_image_logo/login_logo@?x.png}",
         "style": {
           "marginTop": 50,
