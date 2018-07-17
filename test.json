@@ -45,6 +45,15 @@
   "render": [
     {
       "row": "+1",
+      "type": "renderText",
+      "style": ".constants.textPosition",
+      "properties": {
+        "text": "Hello Yoshimoto-san",
+        "style": ".constants.textStyle"
+      }
+    },
+    {
+      "row": "+1",
       "type": "renderImage",
       "properties": {
         "image": "@media{../resources/components/house.png}",
