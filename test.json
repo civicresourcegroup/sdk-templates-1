@@ -43,45 +43,7 @@
     }
   },
   "render": [
-     {
-      "row": "+1",
-      "type": "renderListViewItem",
-      "style": {
-        "marginBottom": 20
-      },
-      "properties": {
-        "header": "Header",
-        "footer": "Footer",
-        "placeHolderData": {
-          "loadingText": "Loading Data..."
-        },
-        "action": [
-          {
-            "when": "onDataLoaded",
-            "action": "setCurrentPOI",
-            "actionCreator": {
-              "find": {
-                "term": ".constants.searchTerm",
-                "resultsPath": {
-                  "template": ".@{ref}.items[0].item",
-                  "variables": {
-                    "ref": "rugby"
-                  }
-                }
-              },
-              "actionResult": {
-                "savePath": "templateItem",
-                "path": ".settings.current.currentPOI",
-                "useAsData": {
-                  "path": true
-                }
-              }
-            }
-          }
-        ]
-      }
-    }
-,   {
+   {
       "row": "+1",
       "type": "renderText",
       "style": ".constants.textPosition",
